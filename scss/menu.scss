@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@font-face {
+    font-family: oratorstd;
+    src: url("../fuentes/OratorStd.otf") format("opentype");
+}
+
+@font-face{
+    font-family: gothamlight;
+    src: url("../fuentes/Gotham-Light.otf") format("opentype");
+}
+
+@font-face{
+    font-family: gothamBook;
+    src: url("../fuentes/Gotham\ Book\ Regular.otf");
+}
+
+$rosa: #FF005C;
+
+/*BARRA NAVEGADORA (MENÚ OCULTO)*/
+.topnav{
+    letter-spacing: 3px;
+    font-family: gothamlight;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .logo{
+        z-index: 2;
+    }
+
+    #menu{
+        height: 1rem;
+    }
+}
+/*MENU DESPLEGADO*/
+.overlay{
+    width: 0%;
+    left: 100%;
+    position: absolute;
+    background-color: $rosa;
+    -webkit-transition: 1s;
+    transition: 1s;
+    z-index: 1;
+    overflow-x: hidden;
+    .overlay-content{
+        position: relative;
+        width: 80%;
+        left: 20%;
+        text-align: center;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        a{
+            text-decoration: none;
+            font-size: 14px;
+            color: white;
+        }
+    }
+    .closebtn{
+        position: absolute;
+        right: 0px;
+        font-size: 3.3rem;
+        padding-right: 2rem;
+        @media only screen and (min-width: 768px) and (max-width: 899px) {
+                position: absolute;
+                right: 45px;
+                font-size: 80px;
+            
+        }
+    }
+}
+
+html,
+body {
+    margin: 0;
+}

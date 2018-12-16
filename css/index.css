@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@font-face {
+  font-family: oratorstd;
+  src: url("../fuentes/OratorStd.otf") format("opentype");
+}
+@font-face {
+  font-family: gothamlight;
+  src: url("../fuentes/Gotham-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: gothamBook;
+  src: url("../fuentes/Gotham Book Regular.otf");
+}
+/*BARRA NAVEGADORA (MENÚ OCULTO)*/
+.topnav {
+  letter-spacing: 3px;
+  font-family: gothamlight;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+}
+.topnav a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav .logo {
+  z-index: 2;
+}
+.topnav #menu {
+  height: 1rem;
+}
+
+/*MENU DESPLEGADO*/
+.overlay {
+  width: 0%;
+  left: 100%;
+  position: absolute;
+  background-color: #FF005C;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 1;
+  overflow-x: hidden;
+}
+.overlay .overlay-content {
+  position: relative;
+  width: 80%;
+  left: 20%;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.overlay .overlay-content a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+.overlay .closebtn {
+  position: absolute;
+  right: 0px;
+  font-size: 3.3rem;
+  padding-right: 2rem;
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .overlay .closebtn {
+    position: absolute;
+    right: 45px;
+    font-size: 80px;
+  }
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.portada {
+  background-image: url("../imagenes_home/portada.jpg");
+  height: 80vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.subportada {
+  background-image: url("../imagenes_home/coma.png");
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 54vw;
+}
+.subportada #sub {
+  /* transform: scale(0.2); */
+  margin-top: -1%;
+  align-self: center;
+  /* max-width: 100%; */
+  height: auto;
+  width: 15%;
+}
+.subportada #coma {
+  align-self: center;
+}
+
+.texto {
+  color: white;
+  margin-top: -6vw;
+  margin-left: 6vw;
+  margin-right: 45vw;
+  font-family: gothamlight;
+}
+@media only screen and (min-width: 1200px) {
+  .texto {
+    font-size: 1.3vw;
+  }
+}
+.texto #segtex {
+  color: black;
+  background-color: white;
+}
+
+.telefono {
+  background-image: url(../imagenes_home/telefono.jpg);
+  height: 43vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-image: url("../imagenes_home/rombo.png"), url("../imagenes_home/linea.png");
+  background-size: 1rem, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.frases {
+  display: flex;
+  justify-content: space-around;
+  font-family: gothamlight;
+  height: 20vw;
+  align-items: center;
+  letter-spacing: 3px;
+}
+.frases div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.frases div:hover .gato {
+  opacity: 1;
+}
+.frases div .gato {
+  transition: all 0.5s ease;
+  height: 10vw;
+  opacity: 0;
+}
+
+#ficha2 {
+  background-image: url("../imagenes_home/ficha2.jpg");
+}
+
+.contenedor {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: gothamlight;
+}
+.contenedor .ficha {
+  background-image: url(../imagenes_home/ficha1.jpg);
+  height: 52vw;
+  width: 70vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contenedor .ficha .contenido {
+  width: 57%;
+  margin-top: 18%;
+  font-size: 1.4vw;
+}
+.contenedor .ficha .botones {
+  margin-top: 9%;
+}
+.contenedor .ficha .botones a {
+  text-decoration: none;
+}
+.contenedor .ficha .botones:hover .ojo {
+  content: url("../imagenes_home/ojo-rosa.svg");
+}
+.contenedor .ficha .botones .ojo {
+  width: 5vw;
+}
+.contenedor .ficha .botones .cruz {
+  width: 3vw;
+  margin-left: 5px;
+}
+
+.boton {
+  color: #666666;
+  border: 1px solid #666666;
+  padding: 0.6rem 1.6rem;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  background-color: white;
+}
+.boton:hover {
+  color: #FF005C;
+}
+
+/*# sourceMappingURL=index.css.map */

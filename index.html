@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estimado Cliente</title>
+    <meta name="author" content="David Guzmán Zazueta para Estimado Cliente">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Movil -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="nosotros.html" id="nosotros">NOSOTROS</a>
+            <a href="proyectos.html">PROYECTOS</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="blog.html"> BLOG</a>
+            <a href="contacto.html"> CONTACTO</a>
+
+        </div>
+    </div>
+    <!-- Desktop -->
+    <div class="portada" id="portada">
+        <div class="topnav">
+            <a href="index.html" class="logo">ESTIMADO CLIENTE</a>
+
+            <div class="btn-menu">
+                <img src="iconos_logos/menu.svg" alt="menu" onclick="openNav()" id="menu">
+            </div>
+        </div>
+        <div class="subportada">
+            <img src="imagenes_home/circulo.png" id="sub" alt="subport">
+        </div>
+        <div class="texto">
+            <h4><b>ESTIMADO</b> CLIENTE</h4>
+            <p>
+                Si estás aquí es por algo y por eso mismo, ¡queremos ayudarte a crecer! Somos
+                una Agencia de Marketing Digital y Diseño de la Ciudad de México, enfocada en resultados.
+            </p>
+            <p id="segtex">
+                Con esto puedes entender que no, no te vamos a fallar, tu inversión será recompensada.
+                <br><br>
+                ¿Qué cómo lo hacemos? Pues creamos, combinamos, probamos, y optimizamos las diferentes estrategias
+                digitales con el mejor diseño. Nos adaptamos a la esencia de tu negocio y todo esto es por algo. Porque
+                al igual que tú, queremos su satisfacción; y es que al final, los clientes de nuestros clientes,
+                también son nuestros.
+            </p>
+        </div>
+    </div>
+
+    <div class="telefono"></div>
+
+    <div class="frases">
+        <div>
+            <img src="imagenes_home/gato1.svg" alt="" class="gato">
+            <h2>MARKETING DIGITAL</h2>
+        </div>
+        <div>
+            <img src="imagenes_home/gato2.svg" alt="" class="gato">
+            <h2>DISEÑO GRÁFICO</h2>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="ficha">
+            <div class="contenido">
+                <h2>PROYECTOS</h2>
+                <p>¿Quieres ayudarte de las herramientas digitales para
+                    hacer crecer tu negocio? Aquí te mostramos nuestros
+                    servicios. ¡Combinémoslos y hagamos éxito juntos!
+                </p>
+            </div>
+            <div class="botones">
+                <a href=""><img src="imagenes_home/ojo.svg" alt="ojo" class="ojo">
+                    <span><img src="imagenes_home/cruz.svg" alt="cruz" class="cruz"></span></a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="ficha" id="ficha2">
+            <div class="contenido">
+                <h2>SERVICIOS</h2>
+                <p>¿La primera impresión siempre es importante, cierto?
+                    Te compartimos una muestra de nuestros proyectos.
+                </p>
+
+            </div>
+            <div class="botones">
+                <a href=""><img src="imagenes_home/ojo.svg" alt="ojo" class="ojo">
+                    <span><img src="imagenes_home/cruz.svg" alt="cruz" class="cruz"></span></a>
+
+            </div>
+        </div>
+    </div>
+        <div class="contenedor">
+            <a href="" class="boton">DIME MÁS</a>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+                document.getElementById("myNav").style.left = "0%"
+            }
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+                document.getElementById("myNav").style.left = "100%";
+            }
+
+            window.onload = function () {
+                document.getElementById("sub").style.width = "80%";
+                document.getElementById("sub").style.transitionDuration = "2s";
+
+            }
+
+        </script>
+        <script type="text/javascript" src="js/aos.js"></script>
+        <script type="text/javascript">
+            AOS.init();
+        </script>
+</body>
+
+</html>
